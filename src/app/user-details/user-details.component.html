@@ -1,0 +1,59 @@
+<div *ngIf="!error">
+    <div class="text-center">
+        <img [src]="singleUserDetail.avatar_url" class="img-responsive" style="height:200px;">
+    </div>
+
+    <br>
+    <table class="table table-responsive table-hover">
+        <tbody>
+            <tr>
+                <td>ID</td>
+                <td>{{ singleUserDetail.id }}</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>{{ singleUserDetail.name }}</td>
+            </tr>
+            <tr>
+                <td>Company</td>
+                <td>{{ singleUserDetail.company }}</td>
+            </tr>
+            <tr>
+                <td>Blog</td>
+                <td>{{ singleUserDetail.blog }}</td>
+            </tr>
+            <tr>
+                <td>Location</td>
+                <td>{{ singleUserDetail.location }}</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>{{ singleUserDetail.email }}</td>
+            </tr>
+            <tr>
+                <td>Bio</td>
+                <td>{{ singleUserDetail.bio }}</td>
+            </tr>
+            <tr>
+                <td>Twitter Username</td>
+                <td>{{ singleUserDetail.twitter_username }}</td>
+            </tr>
+            <tr>
+                <td>Followers</td>
+                <td>{{ singleUserDetail.followers }}</td>
+            </tr>
+            <tr>
+                <td>Following</td>
+                <td>{{ singleUserDetail.following }}</td>
+            </tr>
+        </tbody>
+        
+    </table>
+</div>
+<div >
+    <div class="alert alert-danger" *ngIf="error">
+        <h1>An Error Occurred!</h1>
+        <p>{{ error }}</p>
+    </div>
+</div>
+
